@@ -1,6 +1,6 @@
 # SocialCoder
-Squad - Breno Gondim
-        Leonardo Andre
+Squad - Breno Gondim -
+        Leonardo Andre -
         Breno Santos
         
         
