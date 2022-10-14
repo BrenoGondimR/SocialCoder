@@ -16,17 +16,17 @@ body{
     max-width: 55px;
     min-width: 45px;
     width: auto;
+    height: 52px;
 }
 
 .perfil{
-    background-color: #282836;
     border-radius: 10px;
 
 }
 
 .feed{
-    background-color: #282836;
     border-radius: 10px;
+    display: grid;
 
 }
 
@@ -35,9 +35,48 @@ body{
 }
 
 .col-8{
-    width: 68%;
+    width: 73%;
 }
 
 .col-3{
-    width: 30%;
+    width: 25%;
+}
+
+.repo-linguagens{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.repositorios {
+    height: 145px;
+    align-items: center;
+    display: flex;
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    background-color: #282836;
+    border-radius: 10px;
+    width: 20%;
+    justify-content: center;
+}
+
+.repositorios > p{
+    margin-bottom: 0px;
+}
+
+.logo-ling {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.linguagens {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #282836;
+    border-radius: 10px;
+    height: 145px;
+    align-items: center;
+    width: 75%;
+    justify-content: center;
 }
