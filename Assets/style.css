@@ -14,13 +14,12 @@ body{
 
 .img-fluid {
     max-width: 55px;
-    min-width: 45px;
     width: auto;
     height: 52px;
 }
 
 .perfil{
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: #282836;
 
 }
@@ -36,13 +35,13 @@ body{
     margin: auto;
 }
 
-.col-8{
-    width: 76%;
+.col-7{
+    width: 70%;
     height: 100%;
 }
 
-.col-3{
-    width: 22%;
+.col-5{
+    width: 28%;
     height: 100%;
     margin: auto;
 }
@@ -51,7 +50,7 @@ body{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+
 }
 
 .repositorios {
@@ -62,27 +61,34 @@ body{
     color: white;
     text-align: center;
     background-color: #282836;
-    border-radius: 10px;
-    width: 20%;
+    border-radius: 20px;
+    width: 15%;
     justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 20px;
+    padding: 15px;
 }
 
 .repositorios > p{
     margin-bottom: 0px;
+
 }
 
 .logo-ling {
     margin-left: 20px;
     margin-right: 20px;
+    height: 52px;
 }
 .linguagens {
     display: flex;
     flex-wrap: wrap;
     background-color: #282836;
-    border-radius: 10px;
+    border-radius: 20px;
     height: 145px;
     align-items: center;
-    width: 75%;
+    width: 82%;
+
     justify-content: center;
 }
 
@@ -106,3 +112,77 @@ body{
     width: 40%;
     margin: auto
 }
+
+.container_principal{
+    margin: 0px 25px 0px 25px;
+}
+
+.meio-perfil{
+    height: 50px;
+    color: white;
+    display: flex;
+    margin: auto;
+}
+
+p2{
+    margin: auto 0px;
+}
+
+.baixo-perfil{
+    height: 50px;
+    color: white;
+    display: flex;
+}
+
+.repositorio_logo{
+    width: 60%;
+    height: 30%;
+}
+
+.perfil > hr{
+    color: white;
+    border-radius: 10px;
+}
+
+.logo_uni{
+    width: 16%;
+    height: 75%;
+    margin: auto 0px;
+}
+
+.logo_github{
+    width: 16%;
+    height: 60%;
+    margin: auto 0px;
+}
+
+@media (min-width: 340px) and (max-width: 991px)  {
+    .usuario-foto{
+        width: 26%;
+        margin: auto;
+    }
+
+    .col-5{
+        width: 100%;
+        height: 50%;
+        margin: auto;
+    }
+
+    .col-7{
+        width: 100%;
+        height: 100%;
+    }
+
+    .logo-ling{
+        height: 43px;
+    }
+  }
+
+
+
+  @media (min-width: 405px) and (max-width: 991px)  {
+    .usuario-foto{
+        width: 26%;
+        margin: auto;
+    }
+  }
