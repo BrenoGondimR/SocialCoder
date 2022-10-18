@@ -21,6 +21,7 @@ body{
 
 .perfil{
     border-radius: 10px;
+    background-color: #282836;
 
 }
 
@@ -32,14 +33,18 @@ body{
 
 .row{
     gap: 1rem;
+    margin: auto;
 }
 
 .col-8{
-    width: 73%;
+    width: 76%;
+    height: 100%;
 }
 
 .col-3{
-    width: 25%;
+    width: 22%;
+    height: 100%;
+    margin: auto;
 }
 
 .repo-linguagens{
@@ -79,4 +84,25 @@ body{
     align-items: center;
     width: 75%;
     justify-content: center;
+}
+
+.localizacao {
+    display: flex;
+    justify-content: center;
+}
+
+.cima-perfil {
+    margin-top: 30px;
+    color: white;
+    display: grid;
+}
+
+.cima-perfil >h1{
+    font-size: 1.5rem;
+    margin-top: 15px;
+}
+
+.usuario-foto{
+    width: 40%;
+    margin: auto
 }
