@@ -41,7 +41,7 @@ body{
 }
 
 .col-5{
-    width: 28%;
+    width: 25%;
     height: 100%;
     margin: auto;
 }
@@ -126,6 +126,7 @@ body{
 
 p2{
     margin: auto 0px;
+    margin-left: 20px;
 }
 
 .baixo-perfil{
@@ -136,7 +137,7 @@ p2{
 
 .repositorio_logo{
     width: 60%;
-    height: 30%;
+    height: 40%;
 }
 
 .perfil > hr{
@@ -145,14 +146,14 @@ p2{
 }
 
 .logo_uni{
-    width: 16%;
-    height: 75%;
+    max-width: 70px;
+    height: 65%;
     margin: auto 0px;
 }
 
 .logo_github{
-    width: 16%;
-    height: 60%;
+    max-width: 70px;
+    height: 56%;
     margin: auto 0px;
 }
 
