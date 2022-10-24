@@ -9,27 +9,34 @@
     <title>Login</title>
 </head>
 
+<script src="./Scripts/main.js"></script>
 <body>
-    <section class="container_principal">
-        <div class="container_esquerda">
-            <img class="logo_login" src="./Images/logo.png" alt="logo-socialcoder">
-            <div class="nome">
-                <h1>Social</h1>
-                <h2>Coder</h2>
+    <div class="container_widget">
+        <form >
+            <div class="main-login">
+                <div class="left-login">
+                    <img src="./Images/logo.png" alt="" class="image-login">
+                    <div class="nome">
+                        <h1>Social</h1>
+                        <h2>Coder</h2>
+                    </div>
+                </div>
+                <div class="rigth-login">
+                    <div class="card-login">
+                        <h1>Login</h1>
+                        <div class="textfield">
+                            <input type="text" name="usuario" placeholder="Usuário">
+                        </div>
+                        <div class="textfield">
+                            <input type="password" name="senha" placeholder="Senha">
+                        </div>
+                        <button onclick="irParaFeed()" type="button" class="btn-login">Login</button>
+                        <p class="message">Not registered? <a href="#">Create an account</a></p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="container_direita">
-            <div class="form">
-              <form class="login-form">
-                <input type="text" placeholder="Usuario"/>
-                <input type="password" placeholder="Password"/>
-                <button class="button_login" type="submit">login</button>
-                <p class="message">Not registered? <a href="#">Create an account</a></p>
-              </form>
-            </div>
-          </div>
-        </div>
-    </section>
+        </form>
+    </div>
 </body>
 
 </html>
