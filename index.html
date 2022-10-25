@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Icons Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./Assets/style.css" />
+    <script src="./Scripts/main.js"></script>
+    <title>Social Coder</title>
+</head>
+
+<body>
+
+    <!-- Nav Bar De Interação -->
+    <nav class="navbar navbar-dark ">
+        <div class="container-fluid">
+            <img class="img-fluid" src="./Images/logo.png" alt="Logo SocialCoder">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Social Coder</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Postagens</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="container_principal">
+        <!-- Container Com Perfil E Feed. -->
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-5 perfil">
+                    <div class="container cima-perfil">
+                        <img class="usuario-foto" src="./Images/man.png" alt="foto usuario">
+                        <h1>Breno Gondim</h1>
+                        <div class="localizacao">
+                            <i class="bi bi-geo-alt-fill" style="font-size: 1rem; color:green;"></i>
+                            <p>Fortaleza</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="container meio-perfil">
+                        <img class="img-fluid logo_uni" alt="Logo Universidade" src="./Images/educacao.png">
+                        <p2>UNIFOR-CE</p2>
+                    </div>
+                    <hr>
+                    <div class="container baixo-perfil">
+                        <img class="img-fluid logo_github" alt="Logo GitHub" src="./Images/github.png">
+                        <p2>BrenoGondimR</p2>
+                    </div>
+
+                    <div class="container_edit">
+                        <h5>Deixar Perfil Publico?</h5>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <button onclick="irParaPubli()" type="button" class="btn btn-primary button_post">Publicar Codigo</button>
+                </div>
+
+                <!-- Container Feed -->
+                <div class="col-7 feed">
+                    <div class="container repo-linguagens">
+                        <div class="repositorios">
+                            <img class="img-fluid repositorio_logo" src="./Images/hexagono.png" alt="repositorios">
+                            <p>30</p>
+                        </div>
+                        <div class="linguagens">
+                            <img class="img-fluid logo-ling" src="./Images/python.png" alt="repositorios">
+                            <img class="img-fluid logo-ling" src="./Images/php (1).png" alt="repositorios">
+                            <img class="img-fluid logo-ling" src="./Images/physics.png" alt="repositorios">
+                            <img class="img-fluid logo-ling" src="./Images/js.png" alt="repositorios">
+                            <img class="img-fluid logo-ling" src="./Images/java.png" alt="repositorios">
+                            <img class="img-fluid logo-ling" src="./Images/go-lang.png" alt="repositorios">
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            Breno Gondim
+                        </div>
+                        <div class="card-body">
+                            <img id="foto_card" src="./Images/man.png"></img>
+                            <p class="card-text">Com texto de exemplo para recordar o codigo colocado por devs no nosso
+                                site.</p>
+                                <div class="tema_linguagen">
+                                    <a href="#" class="btn btn-primary">Ver Codigo</a>
+                                    <img id="img_tema" src="./Images/python.png" alt="linguagem image">
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            Breno Gondim
+                        </div>
+                        <div class="card-body">
+                            <img id="foto_card" src="./Images/man.png"></img>
+                            <p class="card-text">Com texto de exemplo para recordar o codigo colocado por devs no nosso
+                                site.</p>
+                                <div class="tema_linguagen">
+                                    <a href="#" class="btn btn-primary">Ver Codigo</a>
+                                    <img id="img_tema" src="./Images/python.png" alt="linguagem image">
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            Breno Gondim
+                        </div>
+                        <div class="card-body">
+                            <img id="foto_card" src="./Images/man.png"></img>
+                            <p class="card-text">Com texto de exemplo para recordar o codigo colocado por devs no nosso
+                                site.</p>
+                            <div class="tema_linguagen">
+                                <a href="#" class="btn btn-primary">Ver Codigo</a>
+                                <img id="img_tema" src="./Images/python.png" alt="linguagem image">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Container Postagens Usuarios -->
+                <div class="container postagens">
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+</body>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+</html>
